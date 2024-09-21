@@ -1,0 +1,58 @@
+:root {
+    --text: #222;
+    --content-bg: #fff;
+    --content-border: #c5c8cc;
+    --panel-bg: #f0f0f2;
+    --form-button-hover: #f6f6f6;
+    --loader-icon: url("../images/loader.svg");
+}
+
+html[data-color-scheme="dark"] {
+    color-scheme: dark;
+    --text: #ddd;
+    --content-bg: #1b1d21;
+    --content-border: #4e5156;
+    --panel-bg: #292c32;
+    --form-button-hover: #383a42;
+    --loader-icon: url("../images/loader-dark.svg");
+}
+
+.simple-modal {
+    background-color: var(--content-bg);
+    border: 1px solid var(--content-border);
+}
+
+.simple-modal .simple-modal-header h1 {
+    color: var(--text);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+    .simple-modal {
+        font-weight: 300;
+    }
+}
+
+.simple-modal .simple-modal-header {
+    border-bottom: 1px solid var(--content-border);
+    background-color: var(--panel-bg);
+}
+
+.simple-modal .simple-modal-footer {
+    background-color: var(--panel-bg);
+    border-top: 1px solid var(--content-border);
+}
+
+.simple-modal .simple-modal-footer a.btn {
+    background: var(--content-bg);
+    color: var(--text);
+    border: 1px solid var(--content-border);
+}
+
+.simple-modal .simple-modal-footer a.btn:hover {
+    box-shadow: unset;
+    background: var(--form-button-hover);
+}
+
+.simple-modal.loading .simple-modal-body {
+    background: transparent var(--loader-icon) no-repeat center center;
+}

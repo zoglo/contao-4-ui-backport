@@ -1,0 +1,85 @@
+{
+  "entrypoints": {
+    "hover": {
+      "js": [
+        "/themes/contao_ui_54/hover.min.js"
+      ]
+    },
+    "install": {
+      "css": [
+        "/themes/contao_ui_54/install.min.css"
+      ],
+      "js": [
+        "/themes/contao_ui_54/install.min.js"
+      ]
+    },
+    "switch": {
+      "css": [
+        "/themes/contao_ui_54/switch.min.css"
+      ],
+      "js": [
+        "/themes/contao_ui_54/switch.min.js"
+      ]
+    },
+    "ui-backport": {
+      "js": [
+        "/themes/contao_ui_54/ui-backport.min.js"
+      ]
+    },
+    "stimulus": {
+      "js": [
+        "/themes/contao_ui_54/stimulus.min.js"
+      ]
+    },
+    "basic": {
+      "css": [
+        "/themes/contao_ui_54/basic.min.css"
+      ]
+    },
+    "main": {
+      "css": [
+        "/themes/contao_ui_54/main.min.css"
+      ]
+    },
+    "confirm": {
+      "css": [
+        "/themes/contao_ui_54/confirm.min.css"
+      ]
+    },
+    "conflict": {
+      "css": [
+        "/themes/contao_ui_54/conflict.min.css"
+      ]
+    },
+    "diff": {
+      "css": [
+        "/themes/contao_ui_54/diff.min.css"
+      ]
+    },
+    "help": {
+      "css": [
+        "/themes/contao_ui_54/help.min.css"
+      ]
+    },
+    "login": {
+      "css": [
+        "/themes/contao_ui_54/login.min.css"
+      ]
+    },
+    "popup": {
+      "css": [
+        "/themes/contao_ui_54/popup.min.css"
+      ]
+    },
+    "tinymce": {
+      "css": [
+        "/themes/contao_ui_54/tinymce.min.css"
+      ]
+    },
+    "tinymce-dark": {
+      "css": [
+        "/themes/contao_ui_54/tinymce-dark.min.css"
+      ]
+    }
+  }
+}

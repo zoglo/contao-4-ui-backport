@@ -1,0 +1,72 @@
+{
+  "name": "zoglo/contao-ui-backport",
+  "type": "contao-bundle",
+  "description": "Backports the new UI changes from Contao 5 to 4.13",
+  "keywords": [
+    "contao 4",
+    "contao 5",
+    "dark mode"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sebastian Zoglowek",
+      "homepage": "https://github.com/zoglo",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "contao/core-bundle": "4.13.*",
+    "contao-components/tinymce4": "^5.0",
+    "contao/image": "^1.0",
+    "imagine/imagine": "^1.0",
+    "knplabs/knp-menu": "^3.1",
+    "symfony/config": "^5.4",
+    "symfony/dependency-injection": "^5.4",
+    "symfony/event-dispatcher": "^5.4",
+    "symfony/filesystem": "^5.4.25",
+    "symfony/finder": "^5.4",
+    "symfony/http-kernel": "^5.4",
+    "symfony/security-core": "^5.4",
+    "symfony/translation-contracts": "^2.3"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.3.1",
+    "shipmonk/composer-dependency-analyser": "^1.5"
+  },
+  "conflict": {
+    "contao/core": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zoglo\\ContaoUserInterfaceBackport\\": "src/"
+    },
+    "classmap": [
+      "contao/"
+    ],
+    "exclude-from-classmap": [
+      "contao/config/",
+      "contao/dca/",
+      "contao/languages/",
+      "contao/templates/",
+      "vendor/contao/core-bundle/src/Resources/contao/library/Contao/Image.php",
+      "vendor/contao/contao/core-bundle/src/Resources/contao/library/Contao/Image.php"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0.x-dev"
+    },
+    "contao-manager-plugin": "Zoglo\\ContaoUserInterfaceBackport\\ContaoManager\\Plugin"
+  },
+  "scripts": {
+    "depcheck": "@php vendor/bin/composer-dependency-analyser --config=depcheck.php"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true,
+      "contao/manager-plugin": true
+    }
+  }
+}

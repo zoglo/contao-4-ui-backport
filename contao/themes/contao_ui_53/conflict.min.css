@@ -1,0 +1,1 @@
+body{background:var(--body-bg) url(icons/stop.svg) center 3em no-repeat}#container{background:var(--content-bg);margin:14em auto 0;width:760px}#main{padding:45px}h1{margin-bottom:1em}p{line-height:1.3}p a{vertical-align:middle}#diff{margin:18px 0}@media (max-width:767px){#container{margin-left:10px;margin-right:10px;width:auto}}

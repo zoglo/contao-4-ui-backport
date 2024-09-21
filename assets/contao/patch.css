@@ -1,0 +1,188 @@
+/** BC Layer for 4.13 */
+
+table.tl_show :is(th,td) {
+	padding: 6px;
+}
+
+table.tl_show th {
+	background-color: var(--table-nb-header);
+}
+
+table.tl_show tbody tr:nth-child(odd) td {
+	background-color: var(--table-nb-odd);
+}
+
+table.tl_show tbody tr:nth-child(even) td {
+	background-color: var(--table-nb-even);
+}
+
+/** As grid **/
+.tl_listing_container .tl_content {
+	padding: 6px;
+}
+
+.parent_view:not(.as-grid) > ul {
+	background: transparent !important;
+}
+
+.cte_type ~ * {
+	line-height: 1.25;
+	position: relative;
+}
+
+.cte_type ~ h1 {
+	font-size: 1.25rem;
+	margin-bottom: 6px;
+}
+
+.cte_type ~ h2 {
+	font-size: 1rem;
+	margin-bottom: 6px;
+}
+
+.cte_type ~ h3 {
+	font-size: .9rem;
+	margin-bottom: 6px;
+}
+
+.cte_type ~ h4,
+.cte_type ~ h5,
+.cte_type ~ h6 {
+	font-size: .875rem;
+	margin-bottom: 6px;
+}
+
+.cte_type ~ p,
+.cte_type ~ figure,
+.cte_type ~ ol,
+.cte_type ~ ul,
+.cte_type ~ table,
+.cte_type ~ div.tl_gray,
+.content-hyperlink,
+.content-toplink,
+.cte_type ~ table caption {
+	margin-bottom: 6px;
+}
+
+.cte_type ~ img {
+	max-width: 320px;
+	height: auto;
+	padding: 6px 0;
+}
+
+.cte_type ~ th,
+.cte_type ~ td {
+	padding: 3px 6px;
+	border-bottom: 1px solid var(--border);
+}
+
+.cte_type ~ th {
+	padding: 6px;
+	background: var(--table-header);
+}
+
+.cte_type ~ td {
+	background: var(--content-bg);
+}
+
+.cte_type ~ table caption {
+	text-align: left;
+	font-size: .75rem;
+}
+
+.cte_type ~ pre {
+	margin-top: 0;
+	margin-bottom: 6px;
+	word-break: break-all;
+	white-space: pre-wrap;
+}
+
+.cte_type ~ pre.disabled {
+	color: var(--pre-disabled);
+}
+
+.cte_type ~ .content-gallery ul {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style: none;
+}
+
+.cte_type ~ a {
+	color: var(--green);
+}
+
+.cte_type ~ div.tl_gray a {
+	color: var(--gray);
+}
+
+.cte_type ~ span.comment {
+	color: var(--blue);
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.cte_type ~ input,
+.cte_type ~ select,
+.cte_type ~ textarea,
+.cte_type ~ button {
+	background: var(--form-bg);
+	border: 1px solid var(--form-border);
+}
+
+.cte_type ~ input[type="file"] {
+	position: relative;
+}
+
+.cte_type ~ select {
+	-moz-appearance: menulist;
+	-webkit-appearance: menulist;
+}
+
+.cte_type ~ label,
+.cte_type ~ .checkbox_container legend,
+.cte_type ~ .radio_container legend {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.cte_type ~ .widget {
+	margin: 0 0 6px;
+}
+
+.cte_type ~ .checkbox_container label,
+.cte_type ~ .radio_container label {
+	display: initial;
+}
+
+.cte_type ~ .widget-captcha {
+	display: block !important;
+}
+
+.cte_type ~ .widget-captcha .captcha_text {
+	padding-left: 3px;
+	vertical-align: middle;
+}
+
+.cte_type +.empty {
+	display: none;
+}
+
+.tl_undo_preview .cte_type ~ h1 {
+	font-size: 1.15rem;
+}
+
+.tl_undo_preview .cte_type ~ h2 {
+	font-size: .9rem;
+}
+
+.tl_undo_preview .cte_type ~ h3 {
+	font-size: .8rem;
+}
+
+.tl_undo_preview .cte_type ~ h4,
+.tl_undo_preview .cte_type ~ h5,
+.tl_undo_preview .cte_type ~ h6 {
+	font-size: .775rem;
+}

@@ -1,0 +1,7 @@
+framework:
+    assets:
+        packages:
+            contao_ui_53:
+                base_path: 'system/themes/contao_ui_53'
+            contao_ui_54:
+                base_path: 'system/themes/contao_ui_54'
