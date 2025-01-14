@@ -10,7 +10,12 @@
 
 namespace Contao;
 
+use Contao\Image\DeferredImageInterface;
 use Contao\Image\Image as NewImage;
+use Contao\Image\ImageDimensions;
+use Contao\Image\ImportantPart;
+use Contao\Image\ResizeConfiguration;
+use Contao\Image\ResizeOptions;
 use Imagine\Image\Box;
 use Symfony\Component\Filesystem\Path;
 use Zoglo\ContaoUserInterfaceBackport\Contao\CoreBundle\String\HtmlAttributes;
